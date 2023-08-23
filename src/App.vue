@@ -1,5 +1,8 @@
 <template>
-  <router-link to="/about">about</router-link>
-  <router-link to="/">home</router-link>
-  <RouterView />
+  <MainLayout>
+    <RouterView />
+  </MainLayout>
 </template>
+<script setup>
+import MainLayout from '@/layouts/MainLayout.vue'
+</script>
