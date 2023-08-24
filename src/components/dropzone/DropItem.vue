@@ -53,8 +53,8 @@ defineProps({
 .item-title{
   color: var(--bs-gray-600);
   padding: 0 10px;
-  overflow: hidden; /* Oculta el contenido que exceda el ancho del div */
-  white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
-  text-overflow: ellipsis; /* Agrega puntos suspensivos al final del texto si se corta */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 </style>

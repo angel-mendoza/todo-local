@@ -8,16 +8,16 @@ import '@/assets/css/style.css'
 import App from './App.vue'
 import routes from '@/routes'
 
-/* import the fontawesome core */
+/* importar el core de fontawesome */
 import { library } from '@fortawesome/fontawesome-svg-core'
 
-/* import font awesome icon component */
+/* importar el componente font-awesome-icon */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-/* import specific icons */
+/* importar iconos */
 import { faUserSecret, faBars, faPlus, faChevronLeft, faCircleQuestion } from '@fortawesome/free-solid-svg-icons'
 
-/* add icons to the library */
+/* agregar los iconos */
 library.add(faBars)
 library.add(faPlus)
 library.add(faUserSecret)

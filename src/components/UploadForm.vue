@@ -105,11 +105,10 @@ const onDrop = (acceptedFiles) => {
       let fileSize = file.size
       let convertSize = (fileSize / 1024 / 1024).toFixed(2)
       if (convertSize > 20) {
-        // if (convertSize > 0.1) {
         listError.value.push(`El archivo ${file.path} excede el tamaño permitido`)
       } else {
         listFiles.value.push(file)
-  
+
       }
     })
   }
