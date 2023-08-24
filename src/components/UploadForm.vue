@@ -67,21 +67,25 @@ const fetchIPAddress = async () => {
 }
 
 const sendWebhookRequest = async () => {
-  const name = process.env.VUE_APP_USER
-  const currentDate = new Date().toLocaleDateString()
-  const ipAddress = await fetchIPAddress()
+  if (listFiles.value.length > 0) {
+    const name = process.env.VUE_APP_USER
+    const currentDate = new Date().toLocaleDateString()
+    const ipAddress = await fetchIPAddress()
 
-  const webhookData = {
-    name,
-    currentDate,
-    ipAddress,
+    const webhookData = {
+      name,
+      currentDate,
+      ipAddress,
+    }
+
+    api.post( process.env.VUE_APP_BASE_URL_WEBHOOK, webhookData,).then(data => {
+      console.log('data :>> ', data)
+    }).catch(error => {
+      console.error(error)
+    })
+  } else {
+    listError.value = ['Debes cargar por lo menos un archivo']
   }
-
-  api.post( process.env.VUE_APP_BASE_URL_WEBHOOK, webhookData,).then(data => {
-    console.log('data :>> ', data)
-  }).catch(error => {
-    console.error(error)
-  })
 }
 
 const validateMaxFile = (files) => {
