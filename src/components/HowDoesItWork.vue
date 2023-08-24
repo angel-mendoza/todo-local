@@ -1,9 +1,9 @@
 <template>
-  <div class="card">
+  <div class="card h-100">
     <div class="card-body how-does-it-work">
       <h2 class="text-primary">¿Cómo funciona?</h2>
       <div class="banner">
-        <img src="@/assets/banner.png" alt="How-does-it-work">
+        <img src="@/assets/image/banner.png" alt="How-does-it-work">
         <p class="hide-movil">Este es un servicio gratuito de <span class="fw-bold text-primary">todolegal</span></p>
       </div>
     </div>
@@ -15,6 +15,7 @@
   flex-direction: column;
   gap: 3rem;
   align-items: center;
+  justify-content: space-around;
 }
 .card-body.how-does-it-work h2{
   font-size: 2.3rem;

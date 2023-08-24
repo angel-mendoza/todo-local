@@ -2,7 +2,7 @@
   <nav class="navbar fixed-top" data-bs-theme="dark">
     <div class="container-fluid">
       <router-link to="/" class="navbar-brand">
-        <img src="@/assets/logo.png" alt="Logo" height="40" class="d-inline-block align-text-top">
+        <img src="@/assets/image/logo.png" alt="Logo" height="40" class="d-inline-block align-text-top">
       </router-link >
       <div class="navbar-right">
         <h3 class="m-0 hide-movil">
